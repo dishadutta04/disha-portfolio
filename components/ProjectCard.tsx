@@ -54,9 +54,16 @@ export function ProjectCard({ project, index }: { project: Project; index: numbe
           {project.stack.length > 5 && <li className="chip-more">+{project.stack.length - 5}</li>}
         </ul>
         <div className="project-foot">
-          <a href={project.repo} target="_blank" rel="noreferrer" className="repo-link">
-            <GitHubMark size={13} /> github / {project.repoName}
-          </a>
+          <span className="project-links">
+            <a href={project.repo} target="_blank" rel="noreferrer" className="repo-link">
+              <GitHubMark size={13} /> github / {project.repoName}
+            </a>
+            {project.live && (
+              <a href={project.live} target="_blank" rel="noreferrer" className="repo-link live-link">
+                <Icon name="globe" size={13} /> Live app
+              </a>
+            )}
+          </span>
           <span className="lang">
             <i style={{ background: project.languageColor }} />
             {project.language}

@@ -902,6 +902,14 @@ button {
   padding-top: 4px;
 }
 
+.project-links {
+  display: inline-flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 6px 14px;
+  min-width: 0;
+}
+
 .repo-link {
   display: inline-flex;
   align-items: center;
@@ -913,6 +921,10 @@ button {
 }
 
 .repo-link:hover {
+  color: var(--blue-text);
+}
+
+.live-link {
   color: var(--blue-text);
 }
 

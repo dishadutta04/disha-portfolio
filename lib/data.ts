@@ -53,6 +53,7 @@ export type Project = {
   year: string;
   repo: string;
   repoName: string;
+  live?: string;
   language: string;
   languageColor: string;
   accent: string;
@@ -78,6 +79,7 @@ export const projects: Project[] = [
     category: "Agentic AI · Voice",
     year: "2026",
     repo: "https://github.com/dishadutta04/MitraAI",
+    live: "https://mitra-ai-seven.vercel.app",
     repoName: "MitraAI",
     language: "TypeScript · Python",
     languageColor: "#3178c6",
@@ -208,6 +210,7 @@ export const projects: Project[] = [
     category: "Full stack · Gemini",
     year: "2026",
     repo: "https://github.com/dishadutta04/HirePro",
+    live: "https://hirepro-three.vercel.app",
     repoName: "HirePro",
     language: "TypeScript · Python",
     languageColor: "#3178c6",

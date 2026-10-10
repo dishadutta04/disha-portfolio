@@ -59,6 +59,11 @@ export default async function ProjectPage({ params }: Props) {
             <a href={project.repo} target="_blank" rel="noreferrer" className="btn btn-primary">
               <GitHubMark size={14} /> View code
             </a>
+            {project.live && (
+              <a href={project.live} target="_blank" rel="noreferrer" className="btn">
+                <Icon name="globe" size={14} /> Live app
+              </a>
+            )}
             {project.video && (
               <a href="#demo" className="btn">
                 <Icon name="play" size={12} /> Watch demo
